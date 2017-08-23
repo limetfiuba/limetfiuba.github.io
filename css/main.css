@@ -29,7 +29,14 @@ h2 {
 h3 {
     font-size: 1.4em;
 }
-p, ul li {
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    color: #333;
+}
+ul li {
     font-size: 1.1em;
     line-height: 1.2em;
     color: #333;
