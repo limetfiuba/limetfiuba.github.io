@@ -5,6 +5,9 @@
         <title>{{ page.title }}</title>
         <link rel="stylesheet" type="text/css" href="/css/main.css">
         <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+        {% if site.google_analytics and jekyll.environment == 'production' %}
+        {% include analytics.html %}
+        {% endif %}
     </head>
     <body>
         <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -28,6 +31,5 @@
                 <li>Facultad de Ingeniería | Universidad de Buenos Aires</li>
             </ul>
         </footer>
-        {% include analytics.html %}
     </body>
 </html>
