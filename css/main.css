@@ -4,6 +4,9 @@ body {
     background-color: #F9FDFF;
     font-family:'Helvetica', 'Arial', 'Sans-Serif'
 }
+nav {
+    border-bottom: 1px solid #0C7DB9;    
+}
 nav ul, footer ul {
     padding: 0px;
     list-style: none;
