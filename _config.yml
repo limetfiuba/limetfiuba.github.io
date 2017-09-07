@@ -1,3 +1,8 @@
 name: LiMet
+title: LiMet
+theme: minima
 markdown: kramdown
+permalink: pretty
 google_analytics: UA-105152862-1
+plugins:
+  - jekyll-feed

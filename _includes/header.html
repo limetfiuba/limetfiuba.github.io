@@ -1,0 +1,56 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div>
+    <nav class="navbar navbar-expand-md fixed-top">
+      <a class="navbar-left" href="/"><img src="{{ "/assets/img/logo1.png" | relative_url }}"/></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          {% if page.url == '/lineas' %}
+          <li class="nav-item active">
+          {% else %}
+          <li class="nav-item">
+          {% endif %}
+            <a class="nav-link" href="/lineas">Líneas de investigación</a>
+          </li>
+          {% if page.url == '/proyectos' %}
+          <li class="nav-item active">
+          {% else %}
+          <li class="nav-item">
+          {% endif %}
+            <a class="nav-link" href="/proyectos">Proyectos</a>
+          </li>
+          {% if page.url == '/publicaciones' %}
+          <li class="nav-item active">
+          {% else %}
+          <li class="nav-item">
+          {% endif %}
+            <a class="nav-link" href="/publicaciones">Publicaciones</a>
+          </li>
+          {% if page.url == '/trabajos' %}
+          <li class="nav-item active">
+          {% else %}
+          <li class="nav-item">
+          {% endif %}
+            <a class="nav-link" href="/trabajos/">Tesis y trabajos finales</a>
+          </li>
+          {% if page.url == '/integrantes' %}
+          <li class="nav-item active">
+          {% else %}
+          <li class="nav-item">
+          {% endif %}
+            <a class="nav-link" href="/integrantes/">Integrantes</a>
+          </li>
+          {% if page.url == '/novedades' %}
+          <li class="nav-item active">
+          {% else %}
+          <li class="nav-item">
+          {% endif %}
+            <a class="nav-link" href="/novedades">Novedades</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</nav>

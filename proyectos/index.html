@@ -1,66 +1,66 @@
 ---
 layout: default
 title: LiMet | Proyectos
+permalink: /proyectos
 ---
-<h2>Proyectos</h2>
-<div class="blurb">
-    <p>
-    <ul>
-        <li><a href="#SBE_legacy">Especificaciones con ejemplos y microservicios en el mantenimiento de aplicaciones heredadas</a></li>
-        <li><a href="#indicadores">Análisis de indicadores de gestión del desarrollo de software</a></li>
-        <li><a href="#tendencias">Análisis de tendencias exitosas del mundo real en arquitectura y gestión del desarrollo</a></li>
-        <li><a href="#paradigmas">Análisis y comparación de los paradigmas funcional y objetos en el desarrollo de software</a></li>
-     </ul>
-    </p>
-    <br>
+<h3>Proyectos</h3>
 
-    <a name="SBE_legacy"><h3>Especificaciones con ejemplos y microservicios en el mantenimiento de aplicaciones heredadas</h3></a>
-    <p>
-        El proyecto pretende encarar la situación que se da cuando existe un producto de software que funciona bien y tiene éxito comercial, pero que cuenta con escasa o nula documentación (funcional, casos de pruebas, de diseño, etc.). En estos casos, la evolución del sistema tiende a ser muy costosa y riesgosa, y se encara sin un método consistente y seguro.
-    </p>
-    <p>
-        La idea es plantear un enfoque metodológico que, utilizando los principios de Acceptance Test Driven Development (<a href="https://www.agilealliance.org/glossary/atdd/">ATDD</a>) y Specification By Example (<a href="https://gojko.net/books/specification-by-example/">SBE</a>) en una forma inversa a la habitual, vaya acotando la funcionalidad con nueva documentación basada en pruebas de aceptación y ejemplos, que permitan progresivamente refactorizarla y modificarla de manera más segura y económica.
-    </p>
-    <p>
-        Entendemos también que cuanto menor sea el acoplamiento del sistema a modificar, más sencillo será implementar nuestra solución. Por eso, una introducción progresiva de <a href="https://martinfowler.com/articles/microservices.html">microservicios</a> bien delimitados por funcionalidades podría ayudar.
-    </p>
-    <p>
-        Otro aspecto interesante de analizar es el de la automatización de las pruebas de aceptación. Si bien SBE no requiere estrictamente de pruebas automatizadas, creemos que en un contexto como el que estamos describiendo, la automatización podría ayudar mucho.
-    </p>
-    <p>
-        Existe un estudio realizado por Michael Feathers (<a href="https://www.pearson.com/us/higher-education/program/Feathers-Working-Effectively-with-Legacy-Code/PGM254740.html">Working Effectively With Legacy Code</a>), pero no llega a resolver del todo el problema. También en la <a href="http://sedici.unlp.edu.ar/handle/10915/29096">tesis de maestría</a> de Carlos Fontela se aborda tangencialmente el tema y lo mismo ocurre con algunos trabajos finales de carrera en FIUBA dirigidos por Fontela.
-    </p>
-    <p>
-        Se espera que los resultados de este proyecto tengan amplia aplicación organizacional, ya que es un tema de enorme relevancia para la industria del software, en la que más de la mitad del desarrollo de software consiste en mantenimiento – sin un método consistente y seguro – de sistemas exitosos, y en los cuales no es habitual contar con documentación suficiente y de calidad.
-    </p>
-    <br>
+<p>
+<ul>
+    <li><a href="#SBE_legacy">Especificaciones con ejemplos y microservicios en el mantenimiento de aplicaciones heredadas</a></li>
+    <li><a href="#indicadores">Análisis de indicadores de gestión del desarrollo de software</a></li>
+    <li><a href="#tendencias">Análisis de tendencias exitosas del mundo real en arquitectura y gestión del desarrollo</a></li>
+    <li><a href="#paradigmas">Análisis y comparación de los paradigmas funcional y objetos en el desarrollo de software</a></li>
+ </ul>
+</p>
+<br>
 
-    <a name="indicadores"><h3>Análisis de indicadores de gestión del desarrollo de software</h3></a>
-    <p>La correcta gestión de un proyecto debe incorporar la utilización de indicadores que permitan monitorear el desempeño de las personas y de los procesos involucrados. Estos indicadores permitirán, entre otras cosas, detectar desvíos frente a las líneas base establecidas y facilitarán la definición y ejecución de acciones preventivas o correctivas en caso de ser necesarias.</p>
-    <p>La “gestión por valor ganado” o EVM por sus siglas en inglés, es una metodología que, a partir de ciertas variables de entrada, permite obtener un conjunto de indicadores para controlar el desempeño del proyecto desde sus tres áreas principales: alcance, tiempo y costo.</p>
-    <p>EVM es una metodología lo suficientemente genérica como para ser aplicada en cualquier proyecto gestionado bajo los lineamientos del PMI, característica que lo posicionó como un estándar de la industria.</p>
-    <p>En forma genérica, se puede afirmar que cualquier indicador justifica su validez en base a la objetividad con la que fue elaborado. En el caso de EVM, un factor crítico es la determinación de las denominadas “reglas de avance”. Estas reglas definen criterios objetivos para la medición del trabajo realizado en la ejecución de las actividades del proyecto y, como consecuencia, en la construcción de sus entregables. Con esto se busca eliminar la subjetividad de aquel que evalúa, estandarizando las mediciones en todo el proyecto.</p>
-    <p>Cabe mencionar que no existe un acuerdo universal en cuanto a la utilización de las distintas opciones de reglas de avance: hay quienes abogan por una regla de 0-100 (o sea, sólo se carga avance de una tarea cuando ésta está terminada al 100%, considerando todo otro estado como 0%), mientras otros plantean reglas de avance por actividades (por ejemplo, 25% cuando está comenzada, 75% cuando está terminada pero no ha sido aprobada, 100% cuando está totalmente terminada). Uno de los objetivos de este proyecto del LiMet es el análisis del impacto de las reglas de avance en el uso de EVM en proyectos de desarrollo de software.</p>
-    <p>Además, en entornos de desarrollo de software está muy cuestionado el concepto de proyectos de alcance, tiempo y costo fijos, sobre todo a partir de la irrupción de los ciclos de vida iterativo-incrementales, y más aún desde la mirada ágil. Si, por ejemplo, tomamos Scrum como el método ágil más difundido, nos encontramos con alcances de proyecto variables durante todo el ciclo de vida, y con indicadores que sólo miden ciertas variables dentro del sprint. Sprint o iteración que, en el marco de Scrum, sí es de alcance, tiempo y costo fijo. El uso de EVM en el contexto de Scrum, por lo tanto, requiere de un enfoque híbrido, ya que no hay una línea base más o menos fija. Hay una considerable cantidad de enfoques para aplicar EVM en el marco de los métodos ágiles, entre ellos estos: <a href="https://es.scribd.com/document/56457311/Earned-Value-for-Agile-Projects">1</a>, <a href="http://thepmjournal.com/agile-earned-value-management/">2</a>, <a href="http://ieeexplore.ieee.org/document/1667558/">3</a>. Pero no hay un enfoque único ni todos los autores están de acuerdo.</p>
-    <p>De todas maneras, si nos movemos hacia ciclos de vida de flujo continuo, como plantea la práctica de Continuous Delivery, las limitaciones para pretender hacer un seguimiento de alcance, tiempo y costos son aún mayores, al punto que se ha cuestionado fuertemente el uso del término “proyecto” para referirse a estos desarrollos, más bien centrados en un producto. Aquí ya parece imposible usar EVM como técnica de seguimiento y control.</p>
-    <p>Por eso, un segundo objetivo de este proyecto es buscar métricas que se adapten mejor a los métodos más modernos de desarrollo, particularmente para ciclos de vida incrementales y de flujo continuo.</p>
-    <br>
+<a name="SBE_legacy"><h3>Especificaciones con ejemplos y microservicios en el mantenimiento de aplicaciones heredadas</h3></a>
+<p>
+    El proyecto pretende encarar la situación que se da cuando existe un producto de software que funciona bien y tiene éxito comercial, pero que cuenta con escasa o nula documentación (funcional, casos de pruebas, de diseño, etc.). En estos casos, la evolución del sistema tiende a ser muy costosa y riesgosa, y se encara sin un método consistente y seguro.
+</p>
+<p>
+    La idea es plantear un enfoque metodológico que, utilizando los principios de Acceptance Test Driven Development (<a href="https://www.agilealliance.org/glossary/atdd/">ATDD</a>) y Specification By Example (<a href="https://gojko.net/books/specification-by-example/">SBE</a>) en una forma inversa a la habitual, vaya acotando la funcionalidad con nueva documentación basada en pruebas de aceptación y ejemplos, que permitan progresivamente refactorizarla y modificarla de manera más segura y económica.
+</p>
+<p>
+    Entendemos también que cuanto menor sea el acoplamiento del sistema a modificar, más sencillo será implementar nuestra solución. Por eso, una introducción progresiva de <a href="https://martinfowler.com/articles/microservices.html">microservicios</a> bien delimitados por funcionalidades podría ayudar.
+</p>
+<p>
+    Otro aspecto interesante de analizar es el de la automatización de las pruebas de aceptación. Si bien SBE no requiere estrictamente de pruebas automatizadas, creemos que en un contexto como el que estamos describiendo, la automatización podría ayudar mucho.
+</p>
+<p>
+    Existe un estudio realizado por Michael Feathers (<a href="https://www.pearson.com/us/higher-education/program/Feathers-Working-Effectively-with-Legacy-Code/PGM254740.html">Working Effectively With Legacy Code</a>), pero no llega a resolver del todo el problema. También en la <a href="http://sedici.unlp.edu.ar/handle/10915/29096">tesis de maestría</a> de Carlos Fontela se aborda tangencialmente el tema y lo mismo ocurre con algunos trabajos finales de carrera en FIUBA dirigidos por Fontela.
+</p>
+<p>
+    Se espera que los resultados de este proyecto tengan amplia aplicación organizacional, ya que es un tema de enorme relevancia para la industria del software, en la que más de la mitad del desarrollo de software consiste en mantenimiento – sin un método consistente y seguro – de sistemas exitosos, y en los cuales no es habitual contar con documentación suficiente y de calidad.
+</p>
+<br>
 
-    <a name="tendencias"><h3>Análisis de tendencias exitosas del mundo real en arquitectura y gestión del desarrollo</h3></a>
-    <p>
-        Descripción en elaboración.
-    </p>
-    <br>
+<a name="indicadores"><h4>Análisis de indicadores de gestión del desarrollo de software</h4></a>
+<p>La correcta gestión de un proyecto debe incorporar la utilización de indicadores que permitan monitorear el desempeño de las personas y de los procesos involucrados. Estos indicadores permitirán, entre otras cosas, detectar desvíos frente a las líneas base establecidas y facilitarán la definición y ejecución de acciones preventivas o correctivas en caso de ser necesarias.</p>
+<p>La “gestión por valor ganado” o EVM por sus siglas en inglés, es una metodología que, a partir de ciertas variables de entrada, permite obtener un conjunto de indicadores para controlar el desempeño del proyecto desde sus tres áreas principales: alcance, tiempo y costo.</p>
+<p>EVM es una metodología lo suficientemente genérica como para ser aplicada en cualquier proyecto gestionado bajo los lineamientos del PMI, característica que lo posicionó como un estándar de la industria.</p>
+<p>En forma genérica, se puede afirmar que cualquier indicador justifica su validez en base a la objetividad con la que fue elaborado. En el caso de EVM, un factor crítico es la determinación de las denominadas “reglas de avance”. Estas reglas definen criterios objetivos para la medición del trabajo realizado en la ejecución de las actividades del proyecto y, como consecuencia, en la construcción de sus entregables. Con esto se busca eliminar la subjetividad de aquel que evalúa, estandarizando las mediciones en todo el proyecto.</p>
+<p>Cabe mencionar que no existe un acuerdo universal en cuanto a la utilización de las distintas opciones de reglas de avance: hay quienes abogan por una regla de 0-100 (o sea, sólo se carga avance de una tarea cuando ésta está terminada al 100%, considerando todo otro estado como 0%), mientras otros plantean reglas de avance por actividades (por ejemplo, 25% cuando está comenzada, 75% cuando está terminada pero no ha sido aprobada, 100% cuando está totalmente terminada). Uno de los objetivos de este proyecto del LiMet es el análisis del impacto de las reglas de avance en el uso de EVM en proyectos de desarrollo de software.</p>
+<p>Además, en entornos de desarrollo de software está muy cuestionado el concepto de proyectos de alcance, tiempo y costo fijos, sobre todo a partir de la irrupción de los ciclos de vida iterativo-incrementales, y más aún desde la mirada ágil. Si, por ejemplo, tomamos Scrum como el método ágil más difundido, nos encontramos con alcances de proyecto variables durante todo el ciclo de vida, y con indicadores que sólo miden ciertas variables dentro del sprint. Sprint o iteración que, en el marco de Scrum, sí es de alcance, tiempo y costo fijo. El uso de EVM en el contexto de Scrum, por lo tanto, requiere de un enfoque híbrido, ya que no hay una línea base más o menos fija. Hay una considerable cantidad de enfoques para aplicar EVM en el marco de los métodos ágiles, entre ellos estos: <a href="https://es.scribd.com/document/56457311/Earned-Value-for-Agile-Projects">1</a>, <a href="http://thepmjournal.com/agile-earned-value-management/">2</a>, <a href="http://ieeexplore.ieee.org/document/1667558/">3</a>. Pero no hay un enfoque único ni todos los autores están de acuerdo.</p>
+<p>De todas maneras, si nos movemos hacia ciclos de vida de flujo continuo, como plantea la práctica de Continuous Delivery, las limitaciones para pretender hacer un seguimiento de alcance, tiempo y costos son aún mayores, al punto que se ha cuestionado fuertemente el uso del término “proyecto” para referirse a estos desarrollos, más bien centrados en un producto. Aquí ya parece imposible usar EVM como técnica de seguimiento y control.</p>
+<p>Por eso, un segundo objetivo de este proyecto es buscar métricas que se adapten mejor a los métodos más modernos de desarrollo, particularmente para ciclos de vida incrementales y de flujo continuo.</p>
+<br>
 
-    <a name="paradigmas"><h3>Análisis y comparación de los paradigmas funcional y objetos en el desarrollo de software</h3></a>
-    <p>
-        El paradigma de objetos ha demostrado ser idóneo en varios escenarios, particularmente dos: en el acortamiento de la brecha entre el problema y el modelo; y en cuanto a su adecuación al mantenimiento de sistemas con cambios frecuentes de requerimientos.
-    </p>
-    <p>
-        Este proyecto tiene como objetivo analizar cuán adecuado resulta el paradigma funcional, en comparación con el paradigma de objetos, en esos escenarios.
-    </p>
-    <br>
-    <p>
-      <strong>Aclaración:</strong> los nombres de los proyectos y sus descripciones son provisionales. Se está recién comenzando con los mismos.
-    </p>
-</div>
+<a name="tendencias"><h4>Análisis de tendencias exitosas del mundo real en arquitectura y gestión del desarrollo</h4></a>
+<p>
+    Descripción en elaboración.
+</p>
+<br>
+
+<a name="paradigmas"><h4>Análisis y comparación de los paradigmas funcional y objetos en el desarrollo de software</h4></a>
+<p>
+    El paradigma de objetos ha demostrado ser idóneo en varios escenarios, particularmente dos: en el acortamiento de la brecha entre el problema y el modelo; y en cuanto a su adecuación al mantenimiento de sistemas con cambios frecuentes de requerimientos.
+</p>
+<p>
+    Este proyecto tiene como objetivo analizar cuán adecuado resulta el paradigma funcional, en comparación con el paradigma de objetos, en esos escenarios.
+</p>
+<br>
+<p>
+  <strong>Aclaración:</strong> los nombres de los proyectos y sus descripciones son provisionales. Se está recién comenzando con ellos.
+</p>
